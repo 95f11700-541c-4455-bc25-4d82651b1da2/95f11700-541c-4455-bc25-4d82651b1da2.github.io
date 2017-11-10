@@ -1,0 +1,28 @@
+---
+layout: feed
+---
+
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>95f11700-541c-4455-bc25-4d82651b1da2.github.io</title>
+  <link href="http://95f11700-541c-4455-bc25-4d82651b1da2.github.io/blog/atom.xml" rel="self"/>
+  <link href="http://95f11700-541c-4455-bc25-4d82651b1da2.github.io/blog"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>http://95f11700-541c-4455-bc25-4d82651b1da2.github.io/blog</id>
+  <author>
+    <name>95f11700-541c-4455-bc25-4d82651b1da2</name>
+    <email>95f11700-541c-4455-bc25-4d82651b1da2@example.me</email>
+  </author>
+
+  {% for post in site.posts %}
+    <entry>
+      <title>{{ post.title }}</title>
+      <link href="http://95f11700-541c-4455-bc25-4d82651b1da2.github.io{{ post.url }}"/>
+      <updated>{{ post.date | date_to_xmlschema }}</updated>
+      <id>http://95f11700-541c-4455-bc25-4d82651b1da2.github.io{{ post.id }}</id>
+      <content type="html">{{ post.content | xml_escape }}</content>
+    </entry>
+  {% endfor %}
+
+</feed>

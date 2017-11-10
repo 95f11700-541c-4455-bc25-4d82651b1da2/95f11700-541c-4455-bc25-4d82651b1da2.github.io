@@ -1,0 +1,26 @@
+/* CSS master file */
+
+body {}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.divNav {
+  margin-left: 20px;
+}
+
+.fa-rebel, .fa-gg, .fa-rss, .fa-wikipedia-w, .fa-random, .fa-plug {
+  color: #FFFFFF;
+  margin-right: 5px;
+}
+
+.topLinks {
+  text-decoration: none;
+  color: #FFFFFF;
+}
